@@ -8,8 +8,8 @@
   	<parameter name="os" value="Windows"></parameter>
   	<parameter name="browser" value="edge"></parameter>
     <classes>
-    	<class name="testcases.LoginDataDrivenTC003"/>  
-    	 <!--  <class name="testcases.LoginWithValidCredentialsTC002"/>  --> 
+    	<!-- <class name="testcases.LoginDataDrivenTC003"/> -->  
+    	  <class name="testcases.LoginWithValidCredentialsTC002"/>   
     	<!-- <class name="testcases.AccountRegistrationTC001"/> -->
     </classes>
   </test> <!-- Test -->
