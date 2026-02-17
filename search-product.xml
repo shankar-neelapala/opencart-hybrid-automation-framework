@@ -3,14 +3,15 @@
 <suite name="Suite">
 	<listeners>
 		<listener class-name="utilities.ExtentReportsManager"></listener>
-	</listeners> 
+	</listeners>
   <test thread-count="5" name="Test">
   	<parameter name="os" value="Windows"></parameter>
   	<parameter name="browser" value="edge"></parameter>
+  	<parameter name="search-product" value="mac"></parameter>
+  	<parameter name="product-name" value="macbook"></parameter>
     <classes>
-    	<!-- <class name="testcases.LoginDataDrivenTC003"/> -->  
-    	 <!--  <class name="testcases.LoginWithValidCredentialsTC002"/> -->   
-    	 <class name="testcases.AccountRegistrationTC001"/> 
+    	<class name="testcases.SearchProductTC004"></class>
+    	
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
