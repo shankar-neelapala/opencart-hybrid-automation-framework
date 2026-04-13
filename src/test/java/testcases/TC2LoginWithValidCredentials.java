@@ -8,9 +8,9 @@ import pageobjects.LoginPage;
 import pageobjects.MyAccountPage;
 import testbase.BaseClass;
 
-public class LoginWithValidCredentialsTC002 extends BaseClass{
+public class TC2LoginWithValidCredentials extends BaseClass{
 
-	@Test(groups = {"sanity", "master"})
+	@Test(groups = {"smoke"})
 	public void login() {
 		
 		logger.info("*****Starting LoginWithValidCredentialsTC002*****");

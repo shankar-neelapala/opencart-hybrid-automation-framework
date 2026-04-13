@@ -7,10 +7,16 @@
   <test thread-count="5" name="Test">
   	<parameter name="os" value="Windows"></parameter>
   	<parameter name="browser" value="edge"></parameter>
-    <classes>
-    	<!-- <class name="testcases.LoginDataDrivenTC003"/> -->  
-    	 <!--  <class name="testcases.LoginWithValidCredentialsTC002"/> -->   
-    	 <class name="testcases.AccountRegistrationTC001"/> 
+  	<parameter name="search-product" value="mac"></parameter>
+  	<parameter name="product-name" value="macbook"></parameter>
+  	<parameter name="product-id" value="product 16"></parameter>
+    <classes> 
+    	 <class name="testcases.TC1AccountRegistration"/>
+    	 <class name="testcases.TC2LoginWithValidCredentials"/>
+    	 <class name="testcases.TC3LoginDataDriven"/>
+    	 <class name="testcases.TC4SearchProduct"/>
+    	 <class name="testcases.TC5ShoppingCart"/>
+    	 <class name="testcases.TC6RemoveProductFromCart"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

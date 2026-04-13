@@ -40,7 +40,7 @@ public class BaseClass {
 	public Logger logger;
 	public Properties prop;
 	
-	@BeforeClass(groups = {"sanity", "regression", "master"})
+	@BeforeClass(groups = {"smoke", "regression"})
 	@Parameters({"os", "browser"})
 	public void setUp(String os, String browser) throws IOException {
 		
@@ -82,7 +82,7 @@ public class BaseClass {
 		getDriver().get(prop.getProperty("appurl"));//reading url from properties file
 	}
 	
-	@AfterClass(groups = {"sanity", "regression", "master"})
+	@AfterClass(groups = {"smoke", "regression"})
 	public void tearDown() {
 		getDriver().quit();
 	}

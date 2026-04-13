@@ -8,9 +8,7 @@
   	<parameter name="os" value="linux"></parameter>
   	<parameter name="browser" value="Chrome"></parameter>
     <classes>
-    	<!-- <class name="testcases.LoginDataDrivenTC003"/> -->
-    	<class name="testcases.LoginWithValidCredentialsTC002"/> 
-    	<!-- <class name="testcases.AccountRegistrationTC001"/> -->
+    	<class name="testcases.TC2LoginWithValidCredentials"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

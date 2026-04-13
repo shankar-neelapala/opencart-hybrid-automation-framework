@@ -2,14 +2,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" thread-count="5" parallel="tests">
 
-	<!--  <listeners>
+	<listeners>
 		<listener class-name="utilities.ExtentReportsManager"></listener>
-	</listeners>-->
+	</listeners>
   <test name="ChromeTest">
   	<parameter name="os" value="Windows"></parameter>
   	<parameter name="browser" value="Chrome"></parameter>
     <classes>
-      <class name="testcases.LoginWithValidCredentialsTC002"/>
+      <class name="testcases.TC2LoginWithValidCredentials"/>
     </classes>
   </test> <!-- Test -->
   
@@ -17,7 +17,7 @@
   	<parameter name="os" value="Windows"></parameter>
   	<parameter name="browser" value="Edge"></parameter>
     <classes>
-      <class name="testcases.LoginWithValidCredentialsTC002"/>
+      <class name="testcases.TC2LoginWithValidCredentials"/>
     </classes>
   </test>
   

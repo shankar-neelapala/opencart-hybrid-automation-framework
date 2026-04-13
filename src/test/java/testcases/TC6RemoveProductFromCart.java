@@ -9,9 +9,9 @@ import pageobjects.LoginPage;
 import pageobjects.ShoppingCartPage;
 import testbase.BaseClass;
 
-public class RemoveProductFromCartTC006 extends BaseClass{
+public class TC6RemoveProductFromCart extends BaseClass{
 	
-	 @Test
+	 @Test(groups = "regression")
 	 @Parameters({"product-id"})
 	 public void removeProduct(String productId) {
 		 logger.info("*****Started RemoveProductFromCartTC006*****");

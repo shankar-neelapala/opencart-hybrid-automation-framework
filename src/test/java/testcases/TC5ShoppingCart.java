@@ -7,9 +7,9 @@ import pageobjects.SearchProductPage;
 import pageobjects.ShoppingCartPage;
 import testbase.BaseClass;
 
-public class ShoppingCartTC005 extends BaseClass {
+public class TC5ShoppingCart extends BaseClass {
 
-    @Test
+    @Test(groups = "regression")
     @Parameters({"search-product", "product-name"})
     public void searchAndAddToCart(String searchProduct, String productName) {
         logger.info("*****Starting ShoppingCartTC005*****");

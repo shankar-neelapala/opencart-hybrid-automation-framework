@@ -9,9 +9,9 @@ import pageobjects.MyAccountPage;
 import testbase.BaseClass;
 import utilities.DataProviders;
 
-public class LoginDataDrivenTC003 extends BaseClass{
+public class TC3LoginDataDriven extends BaseClass{
 
-	@Test(dataProvider = "login-data",dataProviderClass = DataProviders.class, groups = {"datadriven"})
+	@Test(dataProvider = "login-data",dataProviderClass = DataProviders.class, groups = {"smoke"})
 	public void loginDataDrivenTest(String email, String password, String result) {
 		logger.info("*****Starting LoginDataDrivenTC003*****");
 		HomePage hp = new HomePage(getDriver());
@@ -42,6 +42,6 @@ public class LoginDataDrivenTC003 extends BaseClass{
 		    //System.out.println(email);
 		}
 
-		logger.info("*****Starting LoginDataDrivenTC003*****");
+		logger.info("*****Finished LoginDataDrivenTC003*****");
 	}
 }

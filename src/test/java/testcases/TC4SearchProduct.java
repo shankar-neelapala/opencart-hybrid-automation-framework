@@ -7,9 +7,9 @@ import org.testng.annotations.Test;
 import pageobjects.SearchProductPage;
 import testbase.BaseClass;
 
-public class SearchProductTC004 extends BaseClass{
+public class TC4SearchProduct extends BaseClass{
 
-	@Test
+	@Test(groups = "regression")
 	@Parameters({"search-product", "product-name"})
 	public void searchProduct(String searchProduct, String productName) {
 		logger.info("*****Starting SearchProductTC004*****");
