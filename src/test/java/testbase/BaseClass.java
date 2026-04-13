@@ -18,6 +18,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
@@ -72,6 +73,7 @@ public class BaseClass {
 			switch (browser.toLowerCase()) {
 			case "chrome" : setDriver(new ChromeDriver());logger.info("Executing on chrome");break;
 			case "edge" : setDriver(new EdgeDriver());logger.info("Executing on edge");break;
+			case "firefox" : setDriver(new FirefoxDriver());logger.info("Executing on firefox");break;
 			default:logger.info("Invalid Browser");return;
 			}
 		}
