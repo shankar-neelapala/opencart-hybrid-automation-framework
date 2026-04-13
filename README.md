@@ -116,7 +116,7 @@ com.opencart.demo/
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/shankar-neelapala/opencart-hybrid-automation-framework.git
    cd com.opencart.demo
    ```
 
